@@ -1,4 +1,5 @@
 from perinola import Perinola
+from apuesta import Apuesta
 
 p = Perinola()
 print(p)
@@ -7,3 +8,13 @@ resultado= p.tirar()
 print(resultado)
 print(p)
 print(p.cara_visible)
+print("|-------------------------------------------------------------------------|")
+a = Apuesta()
+print(a)
+a.ponerFicha(4)
+print(a)
+a.tomarFicha(8)
+print(a)
+a.tomarFicha()
+print(a)
+
