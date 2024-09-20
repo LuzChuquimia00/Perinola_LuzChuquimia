@@ -23,7 +23,7 @@ def test_tirar():
 def test_tirar_varias_veces():
     perinola = Perinola()
     resultados = [perinola.tirar() for _ in range(10)]
-    assert all(resultado in ("Pon 1", "Toma 2", "Todos Ponen", "Toma 1", "Pon2", "Toma Todo") for resultado in resultados)
+    assert all(resultado in ("Pon 1", "Toma 2", "Todos Ponen", "Toma 1", "Pon 2", "Toma Todo") for resultado in resultados)
 
 def test_tirar_no_repite():
     perinola = Perinola()

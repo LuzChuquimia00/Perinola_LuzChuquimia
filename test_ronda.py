@@ -38,10 +38,10 @@ def test_sacarJugadoresSinFichas():
     jugador1 = Jugador("Tomas")
     jugador2 = Jugador("Juan")
     jugador3 = Jugador("Pedro")
-    jugador3.sacarFicha(5)
     ronda.agregarJugador(jugador1)
     ronda.agregarJugador(jugador2)
     ronda.agregarJugador(jugador3)
+    jugador3.sacarFicha(5)
     ronda.sacarJugadoresSinFichas()
     assert jugador3 not in ronda.jugadores
 

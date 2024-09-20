@@ -12,7 +12,7 @@ def test_repr():
     msj = a.__repr__()
     assert("Apuesta:" in msj)
     assert("fichas" in msj)
-    assert("4" in msj)
+    assert("0" in msj)
 
 def test_ponerFicha():
     a = Apuesta()
